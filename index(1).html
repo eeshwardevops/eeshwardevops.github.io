@@ -68,14 +68,13 @@
     <section class="section" id="about">
       <div class="section-inner about-grid">
         <div class="avatar-wrap">
-          <div class="avatar-placeholder" aria-hidden="true">ESHWAR</div>
-          <p class="avatar-caption">// profile photo placeholder</p>
+          <img src="assets/profile.jpg" alt="Gajula Eshwar" class="avatar-photo">
         </div>
 
         <div class="about-content">
           <p class="eyebrow">$ cat about.md</p>
           <h2>About me</h2>
-          <p>I'm an aspiring cloud and DevOps enthusiast with hands-on experience designing CI/CD pipelines, automating infrastructure, and deploying production-style architectures on AWS. I enjoy turning manual, error-prone processes into repeatable, version-controlled systems.</p>
+          <p>Aspiring DevOps Engineer with hands-on experience in AWS cloud infrastructure, CI/CD pipeline automation, and container orchestration. Proficient in Jenkins, ArgoCD, Docker, Kubernetes (EKS), and Terraform, with monitoring solutions including Prometheus, Grafana, and AWS CloudWatch. Comfortable implementing DevOps best practices, Infrastructure as Code, and GitOps workflows — with a strong focus on security integration using SonarQube, Trivy, and OWASP Dependency-Check.</p>
           <div class="focus-tags">
             <span class="focus-label">Currently exploring</span>
             <span class="pill pill-sage">Kubernetes</span>
@@ -94,28 +93,44 @@
 
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Cloud &amp; infrastructure</h3>
-            <div class="pill-row"><span class="pill">AWS</span><span class="pill">Terraform</span></div>
+            <h3>Cloud platform — AWS</h3>
+            <div class="pill-row"><span class="pill">EC2</span><span class="pill">S3</span><span class="pill">RDS</span><span class="pill">VPC</span><span class="pill">IAM</span><span class="pill">EKS</span><span class="pill">ECR</span><span class="pill">ECS</span><span class="pill">Route 53</span><span class="pill">Elastic Beanstalk</span><span class="pill">ACM</span></div>
           </div>
           <div class="skill-card">
-            <h3>Containers &amp; orchestration</h3>
-            <div class="pill-row"><span class="pill">Docker</span><span class="pill">Kubernetes</span></div>
+            <h3>CI/CD tools</h3>
+            <div class="pill-row"><span class="pill">Jenkins</span><span class="pill">ArgoCD</span><span class="pill">AWS CodePipeline</span><span class="pill">AWS CodeBuild</span><span class="pill">GitHub Actions</span></div>
           </div>
           <div class="skill-card">
-            <h3>CI/CD &amp; GitOps</h3>
-            <div class="pill-row"><span class="pill">Jenkins</span><span class="pill">GitHub Actions</span><span class="pill">ArgoCD</span><span class="pill">GitOps</span></div>
+            <h3>Containerization</h3>
+            <div class="pill-row"><span class="pill">Docker</span><span class="pill">Docker Compose</span><span class="pill">Kubernetes</span><span class="pill">Helm</span><span class="pill">Container Registry</span></div>
           </div>
           <div class="skill-card">
-            <h3>Monitoring &amp; observability</h3>
-            <div class="pill-row"><span class="pill">Prometheus</span><span class="pill">Grafana</span></div>
+            <h3>Infrastructure as Code</h3>
+            <div class="pill-row"><span class="pill">Terraform</span></div>
           </div>
           <div class="skill-card">
-            <h3>Source control</h3>
-            <div class="pill-row"><span class="pill">Git</span><span class="pill">GitHub</span></div>
+            <h3>Monitoring &amp; logging</h3>
+            <div class="pill-row"><span class="pill">Prometheus</span><span class="pill">Grafana</span><span class="pill">AWS CloudWatch</span></div>
           </div>
           <div class="skill-card">
-            <h3>OS &amp; scripting</h3>
-            <div class="pill-row"><span class="pill">Linux</span><span class="pill">Bash scripting</span></div>
+            <h3>Security tools</h3>
+            <div class="pill-row"><span class="pill">SonarQube</span><span class="pill">Trivy</span><span class="pill">OWASP Dependency-Check</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Version control</h3>
+            <div class="pill-row"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Bitbucket</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Operating systems</h3>
+            <div class="pill-row"><span class="pill">Linux (Ubuntu)</span><span class="pill">Amazon Linux</span><span class="pill">Windows</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Scripting</h3>
+            <div class="pill-row"><span class="pill">Python</span><span class="pill">YAML</span><span class="pill">Bash</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Build tools</h3>
+            <div class="pill-row"><span class="pill">Maven</span><span class="pill">npm</span><span class="pill">Gradle</span></div>
           </div>
         </div>
       </div>
@@ -200,8 +215,7 @@
         <p class="eyebrow">$ download resume.pdf</p>
         <h2>Resume</h2>
         <p>Get the full picture of my experience, skills, and projects in one document.</p>
-        <!-- TODO: replace href="#" with the real path to your resume PDF, e.g. "assets/Gajula_Eshwar_Resume.pdf" -->
-        <a href="#" class="btn btn-primary" download>Download resume ↓</a>
+        <a href="assets/Gajula_Eshwar_Resume.pdf" class="btn btn-primary" download="Gajula_Eshwar_Resume.pdf">Download resume ↓</a>
       </div>
     </section>
 
@@ -244,10 +258,9 @@
           <p>Open to opportunities, collaborations, and conversations about cloud and DevOps.</p>
 
           <ul class="contact-list">
-            <!-- TODO: replace with your real email -->
-            <li><span class="contact-label">Email</span> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-            <!-- TODO: replace with your real phone number -->
-            <li><span class="contact-label">Phone</span> <a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+            <li><span class="contact-label">Email</span> <a href="mailto:gajulaeshwar9@gmail.com">gajulaeshwar9@gmail.com</a></li>
+            <li><span class="contact-label">Phone</span> <a href="tel:+916300631951">+91 63006 31951</a></li>
+            <li><span class="contact-label">Location</span> <span>Hyderabad, Telangana</span></li>
           </ul>
 
           <div class="social-row">

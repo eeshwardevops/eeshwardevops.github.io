@@ -346,6 +346,16 @@ img { max-width: 100%; display: block; }
 }
 
 .avatar-wrap { text-align: center; }
+.avatar-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border: 3px solid var(--sage);
+  margin: 0 auto;
+  display: block;
+}
 .avatar-placeholder {
   width: 180px;
   height: 180px;
