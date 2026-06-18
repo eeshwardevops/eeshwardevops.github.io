@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajula Eshwar — Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Gajula Eshwar, an aspiring Cloud and DevOps engineer specializing in Kubernetes, AWS, CI/CD and GitOps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="logo">GE<span class="cursor-blink" aria-hidden="true">_</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="terminal" role="img" aria-label="Terminal window: whoami returns Gajula Eshwar, role --current returns Aspiring Cloud and DevOps Engineer, status returns Building, Deploying, Learning.">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">eshwar@devops:~</span>
+          </div>
+          <pre class="terminal-body" id="terminalBody" aria-hidden="true"></pre>
+          <noscript>
+            <pre class="terminal-body" aria-hidden="true"><span class="prompt">$ whoami</span>
+<span class="output">&gt; Gajula Eshwar</span>
+
+<span class="prompt">$ role --current</span>
+<span class="output">&gt; Aspiring Cloud &amp; DevOps Engineer</span>
+
+<span class="prompt">$ status</span>
+<span class="output">&gt; Building. Deploying. Learning.</span></pre>
+          </noscript>
+        </div>
+
+        <p class="hero-tagline">I'm an aspiring cloud and DevOps enthusiast with hands-on experience building CI/CD pipelines, container platforms, and infrastructure as code.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-inner about-grid">
+        <div class="avatar-wrap">
+          <div class="avatar-placeholder" aria-hidden="true">GE</div>
+          <p class="avatar-caption">// profile photo placeholder</p>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">$ cat about.md</p>
+          <h2>About me</h2>
+          <p>I'm an aspiring cloud and DevOps enthusiast with hands-on experience designing CI/CD pipelines, automating infrastructure, and deploying production-style architectures on AWS. I enjoy turning manual, error-prone processes into repeatable, version-controlled systems.</p>
+          <div class="focus-tags">
+            <span class="focus-label">Currently exploring</span>
+            <span class="pill pill-sage">Kubernetes</span>
+            <span class="pill pill-lavender">ArgoCD</span>
+            <span class="pill pill-amber">Terraform</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow">$ ls skills/</p>
+        <h2>Skills &amp; tools</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Cloud &amp; infrastructure</h3>
+            <div class="pill-row"><span class="pill">AWS</span><span class="pill">Terraform</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Containers &amp; orchestration</h3>
+            <div class="pill-row"><span class="pill">Docker</span><span class="pill">Kubernetes</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>CI/CD &amp; GitOps</h3>
+            <div class="pill-row"><span class="pill">Jenkins</span><span class="pill">GitHub Actions</span><span class="pill">ArgoCD</span><span class="pill">GitOps</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Monitoring &amp; observability</h3>
+            <div class="pill-row"><span class="pill">Prometheus</span><span class="pill">Grafana</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Source control</h3>
+            <div class="pill-row"><span class="pill">Git</span><span class="pill">GitHub</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>OS &amp; scripting</h3>
+            <div class="pill-row"><span class="pill">Linux</span><span class="pill">Bash scripting</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow">$ git log --projects</p>
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="pipeline">
+              <span class="stage">Build</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Scan</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Deploy</span>
+            </div>
+            <h3>End-to-End CI/CD Pipeline with GitOps for a Node.js App</h3>
+            <ul>
+              <li>Built a Jenkins pipeline automating cleanup, install, build, and security scanning.</li>
+              <li>Integrated SonarQube quality gates to block vulnerable or low-quality builds.</li>
+              <li>Provisioned AWS VPC, EC2, RDS, and load balancers with Terraform.</li>
+              <li>Added OWASP Dependency-Check and Trivy for dependency and image scanning.</li>
+              <li>Containerized the app with minimal, non-root Docker images, auto-pushed to Docker Hub.</li>
+              <li>Shipped GitOps deployments to AWS EKS using ArgoCD.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Jenkins</span><span class="tag">Terraform</span><span class="tag">SonarQube</span><span class="tag">Trivy</span><span class="tag">Docker</span><span class="tag">ArgoCD</span><span class="tag">EKS</span>
+            </div>
+            <a class="project-link" href="https://github.com/eeshwardevops/DevSecOps-E2E-Project.git" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="pipeline">
+              <span class="stage">Provision</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Scale</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Monitor</span>
+            </div>
+            <h3>Production-Grade 3-Tier AWS Architecture for Spring PetClinic</h3>
+            <ul>
+              <li>Deployed a highly available 3-tier architecture with VPC, ALB, ASGs, RDS MySQL, and CloudWatch.</li>
+              <li>Architected public, private-app, and private-DB subnets with NAT/Internet gateways and security groups.</li>
+              <li>Ran a React/Nginx frontend behind a public ALB and a Spring Boot backend behind an internal ALB.</li>
+              <li>Used Launch Templates and Auto Scaling Groups for self-healing, scalable tiers.</li>
+              <li>Enabled HTTPS via ACM and connected a custom domain through GoDaddy DNS.</li>
+              <li>Used Systems Manager and CloudWatch for secure instance management and monitoring.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">AWS VPC</span><span class="tag">ALB</span><span class="tag">Auto Scaling</span><span class="tag">RDS MySQL</span><span class="tag">CloudWatch</span><span class="tag">ACM</span>
+            </div>
+            <a class="project-link" href="https://github.com/eeshwardevops/spring-petclinic-3tier-aws-deployment.git" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="pipeline">
+              <span class="stage">Build</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Test</span><span class="arrow" aria-hidden="true">→</span><span class="stage">Release</span>
+            </div>
+            <h3>End-to-End CI/CD Pipeline on AWS for a Java Application</h3>
+            <ul>
+              <li>Automated builds with GitHub, AWS CodePipeline, and AWS CodeBuild.</li>
+              <li>Configured Maven builds with dynamic RDS credentials via buildspec.yml.</li>
+              <li>Deployed to Elastic Beanstalk with load balancing and rolling, zero-downtime updates.</li>
+              <li>Locked down RDS access to the application tier with Security Groups.</li>
+              <li>Routed a custom domain through Route 53 with HTTPS via ACM.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">CodePipeline</span><span class="tag">CodeBuild</span><span class="tag">Elastic Beanstalk</span><span class="tag">Route 53</span><span class="tag">ACM</span>
+            </div>
+            <!-- TODO: add a GitHub link for this project once you have a public repo -->
+            <span class="project-link project-link-muted">Repository link coming soon</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section section-alt" id="resume">
+      <div class="section-inner resume-inner">
+        <p class="eyebrow">$ download resume.pdf</p>
+        <h2>Resume</h2>
+        <p>Get the full picture of my experience, skills, and projects in one document.</p>
+        <!-- TODO: replace href="#" with the real path to your resume PDF, e.g. "assets/Gajula_Eshwar_Resume.pdf" -->
+        <a href="#" class="btn btn-primary" download>Download resume ↓</a>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section" id="blog">
+      <div class="section-inner">
+        <p class="eyebrow">$ ls blog/ --placeholder</p>
+        <h2>Blog</h2>
+        <p class="section-note">These posts are placeholders — swap them for your own write-ups whenever you're ready.</p>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <span class="blog-date">Coming soon</span>
+            <h3>Setting up GitOps with ArgoCD: lessons learned</h3>
+            <p>A walkthrough of moving from manual kubectl deploys to a fully declarative, version-controlled GitOps workflow.</p>
+            <span class="blog-link blog-link-muted">Read more</span>
+          </article>
+          <article class="blog-card">
+            <span class="blog-date">Coming soon</span>
+            <h3>Building a secure CI/CD pipeline with Jenkins and Trivy</h3>
+            <p>Notes on wiring up static analysis, dependency scanning, and image scanning into a single pipeline.</p>
+            <span class="blog-link blog-link-muted">Read more</span>
+          </article>
+          <article class="blog-card">
+            <span class="blog-date">Coming soon</span>
+            <h3>A practical guide to 3-tier architecture on AWS</h3>
+            <p>Breaking down subnets, load balancers, and auto scaling for a production-style deployment.</p>
+            <span class="blog-link blog-link-muted">Read more</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">$ contact --info</p>
+          <h2>Let's connect</h2>
+          <p>Open to opportunities, collaborations, and conversations about cloud and DevOps.</p>
+
+          <ul class="contact-list">
+            <!-- TODO: replace with your real email -->
+            <li><span class="contact-label">Email</span> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <!-- TODO: replace with your real phone number -->
+            <li><span class="contact-label">Phone</span> <a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+          </ul>
+
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/gajulaeshwar9" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/eeshwardevops" target="_blank" rel="noopener noreferrer" class="social-link">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/ezwr._._" target="_blank" rel="noopener noreferrer" class="social-link">Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <!-- TODO: sign up at formspree.io (free) and replace YOUR_FORM_ID below with your real endpoint id -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote" hidden>Thanks — your message is on its way.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Gajula Eshwar. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
